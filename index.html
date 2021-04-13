@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"type="text/css"href="bootstrap/css/bootstrap.min.css">
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <script href="js/bootstrap.min.js"></script>
 <style>
 * {
@@ -56,9 +56,12 @@ button:hover{
 .button-container:not(:last-child) {
   border-right: 2px solid #ddd;
 }
-.btnpause{
-  width:250px;
-  margin-bottom:5px;
+#icon{
+  font-size: 50px;
+  position:fixed;
+  top:10px;
+  right: 20px;
+  color: #ddd;
 }
 </style>
 </head>
@@ -70,13 +73,12 @@ button:hover{
 
 <div class="content">
   <div class="container">
+    <div id="icon" class="fa fa-play-circle-o" onclick="myFunction()"></div>
     <a href="#" class="button-container"><button>Register</button></a>
     <a href="#" class="button-container"><button>Log In</button></a>
     </div>
   </div>
-  <div class="btnpause">
-    <button class="btn btn-outline-primary" onclick="myFunction()">Pause</button>
-  </div>
+</div>
 <script>
 var video = document.getElementById("myVideo");
 var btn = document.getElementById("myBtn");
